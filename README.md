@@ -23,6 +23,27 @@
 - Which location (country and city) do most users come from?
 
 
+
+____
+
+Usage:
+
+```
+pip install -r requirements.txt
+```
+
+Put into .env file your keys and passwords
+
+Start OMIO with your username and password:
+
+docker run -p 9000:9000 -p 9001:9001 --name minio \
+  -e "MINIO_ROOT_USER=<<<your_username>>>" \
+  -e "MINIO_ROOT_PASSWORD=<<<your_password>>>" \
+  quay.io/minio/minio server /data --console-address ":9001"
+
+Duck DB usage is integrated into python, no special setup needed
+
+
 -------------
 
 # DESCRIPTION:

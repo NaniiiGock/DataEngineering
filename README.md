@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 Put into .env file your keys and passwords
 
-Start OMIO with your username and password:
+Start MINIO with your username and password:
 
 docker run -p 9000:9000 -p 9001:9001 --name minio \
   -e "MINIO_ROOT_USER=<<<your_username>>>" \
